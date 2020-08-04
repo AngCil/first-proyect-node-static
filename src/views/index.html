@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="body">
+    <header>
+        <h1 class="calculadoraTitle">Calculadora</h1>
+    </header>
+        <div class="container">
+            <div>
+                <div>
+                    <h1 id="casillaNumero" class="casillaNumero"> 0 </h1>
+                </div>
+            <div>
+    <div>
+        <button id="button0" class="button" onclick="escribirNumero(0)">0</button>
+    
+        <button id="1" class="button" onclick="escribirNumero('1')">1</button>
+    
+        <button id="2" class="button" onclick="escribirNumero('2')">2</button>
+    </div>
+    
+    <div>
+        <button id="3" class="button" onclick="escribirNumero('3')">3</button>
+    
+        <button id="4" class="button" onclick="escribirNumero('4')">4</button>
+    
+        <button id="5" class="button" onclick="escribirNumero('5')">5</button>
+    
+    </div>
+    
+    <div>
+        <button id="6" class="button" onclick="escribirNumero('6')">6</button>
+    
+        <button id="7" class="button" onclick="escribirNumero('7')">7</button>
+    
+        <button id="8" class="button" onclick="escribirNumero('8')">8</button>
+    
+    </div>
+    <div>
+    
+        <button id="9" class="button" onclick="escribirNumero('9')">9</button>
+    
+        <button id="+" class="button" onclick="operacion('suma')">+</button>
+    
+        <button id="-" class="button" onclick="operacion('resta')">-</button>
+    
+    </div>
+    
+    <div>
+    
+        <button id="clear" class="button" onclick="limpiar()">C</button>
+    
+        <button id="=" class="button" onclick="operacion('multiplicacion')">x</button>
+    
+        <button id="=" class="button" onclick="operacion('division')">/</button>
+    
+    </div>
+    
+    <div class="div6">
+        <button id="ans" class="button" onclick="usarAns()">ans </button>
+        <button id="=" class="button" onclick="resultado(primerValor, segundoValor)">= </button>
+    </div>
+    </div>
+    </div>
+    </div>
+        
+    <script src="./src/index.js"></script>
+</body>
+</html>
